@@ -1,5 +1,7 @@
 # SineTables.jl
 
+This package experiments with using LUTs to speed up tone generation.
+
 ## Testing the code
 
 From project root, run the following bash command.
