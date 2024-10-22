@@ -1,5 +1,7 @@
 # SineTables.jl
 
+[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://erikbuer.github.io/SineTables.jl/stable/)
+
 This package experiments with using LUTs to speed up tone generation.
 
 ## Testing the code
