@@ -2,7 +2,7 @@ module SineTables
 
 using Base: pi
 
-export create_sine_table, lut_sine, lut_sine!, lut_cosine,lut_cosine!, SineTable
+export create_sine_table, lut_sine, lut_sine!, lut_cosine, lut_cosine!, SineTable
 
 """
 Store the lookup table and additional parameters

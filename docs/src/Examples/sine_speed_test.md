@@ -1,4 +1,4 @@
-# Speeed Test
+# Sine Speeed Test
 
 Lets compare the speed difference of using SineTables and `Base.sin`.
 We'll assume that the signal will be generated on a 12-bit DAC.
@@ -81,3 +81,4 @@ result_lut = Vector{Int16}(undef, num_points)
 ```
 
 Puh, that was close! As we can see, it is possible to get slightly faster sin-generation using this LUT package.
+If this is worth the added complexity is another matter.

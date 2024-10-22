@@ -27,7 +27,7 @@ makedocs(
         "Examples"  => Any[ 
                         "Examples/basic_use.md",
                         "Examples/dynamic_range.md",
-                        "Examples/speed_test.md",
+                        "Examples/sine_speed_test.md",
                     ],
     ],
     doctest  = true,

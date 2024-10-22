@@ -11,7 +11,7 @@ sine_table = create_sine_table(
     Int16, # LUT type
     256,   # Number of pints
     0,     # Bias
-    2047    # Scaling
+    2047   # Scaling
 )
 
 
