@@ -1,6 +1,6 @@
 # Dynamic Range
 
-Lets see what dynamic range we can achieve with LUTs of different sizes.
+Let's see what dynamic range we can achieve with LUTs of different sizes.
 We'll assume that the signal will be generated on a 12-bit DAC.
 
 ```@example SineTables
@@ -72,12 +72,12 @@ savefig("lut-length_dynamic_range_small.svg"); nothing # hide
 
 ```
 
-The plot below shows the normalized dynamic range resulting from tables of different length.
+The plot below shows the normalized dynamic range resulting from tables of different lengths.
 As we see, the harmonics decrease with increasing table length.
 
 ![Lut Dynamic Range](lut-length_dynamic_range_small.svg)
 
-Due to the high number of spurs in the smaller tables, we have separated the results in two plots.
+Due to the high number of spurs in the smaller tables, we have separated the results into two plots.
 
 ```@example SineTables
 #plot(periodogram_50.freq, normalized_power(periodogram_50), reuse = false, label="50")

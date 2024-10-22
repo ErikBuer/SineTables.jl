@@ -1,6 +1,6 @@
 # Basic Use
 
-Lets create a lookup table for a 12-bit DAC.
+Let's create a lookup table for a 12-bit DAC.
 
 ```@example SineTables
 using ..SineTables

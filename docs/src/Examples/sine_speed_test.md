@@ -1,9 +1,9 @@
 # Sine Speeed Test
 
-Lets compare the speed difference of using SineTables and `Base.sin`.
+Let's compare the speed difference of using SineTables and `Base.sin`.
 We'll assume that the signal will be generated on a 12-bit DAC.
 
-Lets start by looking at the `Base.sin` version, so get the time-to-beat.
+We'll start by looking at the `Base.sin` version, so get the time-to-beat.
 
 ```@example SpeedTest
 using BenchmarkTools
@@ -27,7 +27,7 @@ result_base_sin = Vector{Int16}(undef, num_points)
 @benchmark generate_sine_using_base_sin!($result_base_sin, $num_points, $scaling_factor)
 ```
 
-Now lets see what we can accomplish with our LUT-based sine.
+Now let's see what we can accomplish with our LUT-based sine.
 
 ```@example SpeedTest
 using ..SineTables
@@ -58,7 +58,7 @@ result_lut = Vector{Int16}(undef, num_points)
 ```
 
 Well this is embarresing.. The LUT-version is way slower than simply using `Base.sin`.
-Maybe we can reduce the time by precalculationg the phase increment.
+Maybe we can reduce the time by precalculationg the phase increment?
 
 ```@example SpeedTest
 # Function to generate a sine wave using the LUT (optimized version)
