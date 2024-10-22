@@ -9,7 +9,7 @@ using Plots
 # Create a sine lookup table with integer
 sine_table = create_sine_table(
     Int16, # LUT type
-    256,   # Number of pints for a quarter sine
+    256,   # Number of pints
     0,     # Bias
     2047    # Scaling
 )
