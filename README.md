@@ -4,9 +4,16 @@
 
 This package experiments with using LUTs to speed up tone generation.
 
+The package is currently not registered.
+Add it using ht following command.
+
+```Julia
+] add git@github.com:ErikBuer/SineTables.jl.git
+```
+
 ## Testing the code
 
-From project root, run the following bash command.
+From the project root, run the following bash command.
 
 ```bash
 julia --project=. -e 'using Pkg; Pkg.test()'
