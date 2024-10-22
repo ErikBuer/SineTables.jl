@@ -67,7 +67,7 @@ normalized_power(pgram) = pow2db.(pgram.power ./ maximum(pgram.power))
 plot(periodogram_50.freq, normalized_power(periodogram_50), reuse = false, label="50")
 plot!(periodogram_50.freq, normalized_power(periodogram_2000), reuse = false, label="2000")
 
-plot!(xlabel="Frequency [Hz]", ylabel="Power [dB/Hz]", title="Spurious-free dynamic range vs LUT size")
+plot!(xlabel="Normalized Frequency", ylabel="Power [dB]", title="Spurious-free dynamic range vs LUT size")
 savefig("lut-length_dynamic_range_small.svg"); nothing # hide
 
 ```
@@ -85,7 +85,7 @@ Due to the high number of spurs in the smaller tables, we have separated the res
 plot(periodogram_50.freq, normalized_power(periodogram_500), reuse = false, label="500")
 plot!(periodogram_50.freq, normalized_power(periodogram_2000), reuse = false, label="2000")
 
-plot!(xlabel="Frequency [Hz]", ylabel="Power [dB/Hz]", title="Spurious-free dynamic range vs LUT size")
+plot!(xlabel="Normalized Frequency", ylabel="Power [dB]", title="Spurious-free dynamic range vs LUT size")
 savefig("lut-length_dynamic_range_large.svg"); nothing # hide
 
 ```

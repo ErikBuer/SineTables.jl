@@ -1,7 +1,7 @@
 name = "SineTables"
 uuid = "cd6dab6d-c555-4e2f-9f3e-18e1596ea3b4"
 authors = ["Erik Buer"]
-version = "0.1.1"
+version = "0.1.2"
 
 [deps]
 
